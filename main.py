@@ -1,9 +1,14 @@
-import pygame; from constants import SCREEN_WIDTH, SCREEN_HEIGHT; from logger import log_state; from player import *
+import pygame
+from constants import (
+    SCREEN_WIDTH,
+    SCREEN_HEIGHT,
+    TIME)
+from logger import log_state
+from player import Player
 
 def main():
     pygame.init()
     Clock = pygame.time.Clock()
-    TIME = 60
     dt = 0
     Player1 =  Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
